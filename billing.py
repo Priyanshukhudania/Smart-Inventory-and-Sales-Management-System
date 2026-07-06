@@ -85,7 +85,7 @@ class Billing:
 
         final_amount = amount_after_discount + gst_amount
 
-        with open(filename, "w") as file:
+        with open(filename, "w", encoding="utf-8") as file:
 
             file.write("=" * 60 + "\n")
             file.write("SMART INVENTORY SYSTEM\n")
